@@ -25,6 +25,10 @@ public class PersonaFRM extends javax.swing.JFrame {
         cargarTabla();
     }
     
+    private String ejemplo(int elem){
+        return "";
+    }
+    
     private String[] getColumn(){
         String columnas[] = new String[]{"Identificacion", "Nombre","Apellido","Direccion", "Telefono","Email"};
         return columnas;
