@@ -1,0 +1,10 @@
+module formula_medicamentoApp{
+interface Formula_Medicamento{
+boolean insertarFormula_Medicamento(in long id, in long id_formula, in wstring cantidad, in long id_medicamento);
+wstring consultarFormula_Medicamento(in long id);
+boolean actualizarFormula_Medicamento(in long id, in long id_formula, in wstring cantidad, in long id_medicamento);
+boolean eliminarFormula_Medicamento(in long id);
+wstring listarFormula_Medicamento();
+oneway void shutdown();
+};
+};

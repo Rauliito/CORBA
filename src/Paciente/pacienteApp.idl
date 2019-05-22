@@ -1,0 +1,13 @@
+module PacienteApp{
+interface Paciente{
+boolean insertarPaciente(in long id, in wstring nombre, in wstring apellido, in wstring identificacion,
+in wstring telefono, in wstring direccion);
+wstring consultarPaciente(in long id);
+boolean actualizarPaciente(in long id, in wstring nombre, in wstring apellido, in wstring identificacion,
+in wstring telefono, in wstring direccion);
+boolean eliminarPaciente(in long id);
+wstring listarPaciente();
+oneway void shutdown();
+};
+};
+

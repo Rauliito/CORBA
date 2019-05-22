@@ -1,0 +1,11 @@
+module formulamedicaApp{
+interface Formulamedica{
+boolean insertarFormulamedica(in long id, in wstring fecha, in wstring dosis, in long id_paciente);
+wstring consultarFormulamedica(in long id);
+boolean actualizarFormulamedica(in long id, in wstring fecha, in wstring dosis, in long id_paciente);
+boolean eliminarFormulamedica(in long id);
+wstring listarFormulamedica();
+oneway void shutdown();
+};
+};
+

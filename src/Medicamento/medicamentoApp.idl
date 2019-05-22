@@ -1,0 +1,12 @@
+module MedicamentoApp{
+interface Medicamento{
+boolean insertarMedicamento(in long id, in wstring nombre, in wstring laboratorio, in wstring descripcion,
+in wstring composicion, in wstring medicamento);
+wstring consultarMedicamento(in long id);
+boolean actualizarMedicamento(in long id, in wstring nombre, in wstring laboratorio, in wstring descripcion,
+in wstring composicion, in wstring medicamento);
+boolean eliminarMedicamento(in long id);
+wstring listarMedicamento();
+oneway void shutdown();
+};
+};

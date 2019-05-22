@@ -1,0 +1,12 @@
+module DiagnosticoApp{
+interface Diagnostico{
+boolean insertarDiagnostico(in long id, in wstring nombre, in wstring descripcion, in long id_paciente);
+wstring consultarDiagnostico(in long id);
+boolean actualizarDiagnostico(in long id, in wstring nombre, in wstring descripcion, in long id_paciente);
+boolean eliminarDiagnostico(in long id);
+wstring listarDiagnostico();
+oneway void shutdown();
+};
+};
+
+
